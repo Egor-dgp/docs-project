@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>Context - Architecture Documentation</title>
+    <title>Container temperature - Architecture Documentation</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Context";
-        var mkdocs_page_input_path = "architecture/context.md";
+        var mkdocs_page_name = "Container temperature";
+        var mkdocs_page_input_path = "architecture/container_temperature.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -47,9 +47,9 @@
               <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" href="../component/">Component</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../container_temperature/">Container temperature</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Container temperature</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Context</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../context/">Context</a>
                   </li>
               </ul>
       </div>
@@ -67,7 +67,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Architecture</li>
-      <li class="breadcrumb-item active">Context</li>
+      <li class="breadcrumb-item active">Container temperature</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -76,12 +76,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <p><img alt="Kroki" src="https://kroki.io/plantuml/svg/eNqVlMtqwlAQhvd5ilNXFqTSqnvBF5D6AEVqFgWN4mXRnRdoKRYFN4UuavsG1gtNjSavMOeN-s8c4yWWYkEImfPnO_8_M5htNIv1ZqtSVpZ1dufcllslW9XKRYdryVz6Jlet1KqO7TQvaqhYVt6uN6pOPJ9QMXolj1xa0Fp3Y-dW4b7RtCvxwiUffZCrO7qLwxVNlO5RoNs0oSm-gB6HQ4UXH0UfqglU7h7i6nSES3O8-ihM6JM8PZD3tfha7SFTpyLZj09BWIpg0n9gPIBCjO6xguPRt2inJqTiX4Cqp5_pC0_UheTpYaQJmRMd6w7fK67ZqXVtl3k8Zg5vqC91W_fFAFQHbYec1ZDKPMdw0dOPG6HcC3McBW3he3yp-bDKnXH3WBtSPmFmNwahDYdLnsiWyENSNIedHs2AHSgIuC0LLkUQLzgJ-G7RiKGuZF-jhG7pB6QfKPa224Idrr_DpU50hO8XZjiMeArnHwGNDhFJ0-JD6tEOhY1OhY02ZubbZLwBMuSFpORk3HIz-EDkZhTtfUNpsN4hmZktkQ85CkM6engoHMPS_Dg_ryAH_2Vj_R1AlnGENYqEj3Rju4xh4Mw_A4e7zCGtrO2U-E_nB50zvcs=?" /> </p>
+                <p><img alt="Kroki" src="https://kroki.io/plantuml/svg/eNq1Vk1PE1EU3c-veHYFCdGNPwCFxIWaIHVPBvokk0xn6nQKIcaktCoaCI2ujDEQFu7HQmWgnfYvvPePPPe-aacf0xI1spm-r3PPPe_c-1ithnYQ1squZYVO6Eqxbwdlv1aVYsf3QtvxZCBCWa7IwA5rgRQlv4xJUXLs3cAuW9Y9x9txayUpKq7tEc6DtYdba8Oj9yuMvCGDqu8trbmO9MIVUVDnqq-6-kRd49tWkW6oDo2FbqqeSjB5qfpCXeFHT0WFhScOVawPedjTx4Vlq3hQBd-llxlnYhP4rlkgrIvsiIoo5kDXVQTYLqYSLLZEujpQHVrSDd3Et69umMsZgibMI8Faa4ID6I44rMs9Z0duytc1WQ3XnWoYONu10A8MRl3dAh3HTATV13WB9CJm0wcmAgj8aIBhug0EOE67MBciVwFDJNXBlUzgG9CSFLVLmSN8XtYQdc52hBpd9NK6HdrbdlXS3s9IAonQBUaQKNHH-j2BbPjVcDeQxRfPGPIHq056N8a2qg5wM-Ctx37NK9nBwX-70WXxxhL4y3J57m87rnxUqRD0d2z6qWI2H116RzA4JjD4ZeDBGVuf-qHreCuiuO-8Cgt_cHZ5Kn5RBnvmkqbyqrOwbU4hQQINth-5kDxIs2aN6TzxCwYim0_teoQPmeYEkd9a1qZ0R6U5kfoFovb5zvmKInVLsuHL-SD-qQD_RL8j4xFD_QE7MdnPVxvpw9EDruqO_pTmH4PFXArnJh_4vKtPiTjGKIjDWRiARzmzi8C_wJikLhtFtxia8sLVmOxy66GZQo5BZRdm2lRzxHRaNDYB1TYH7iNoyv2K8Y8wuOXCzy9F2telK6dNCaDrFCXrmIPcLtlaxBgimGPIOZWgjeE1InWG7cZQJJtNB8bhmwnyf0ltyGe8jcxoOdYjhHkfMs0i_X6uZgPaPEurp5vzaJ2mtOZ38Du665npQPojyLXH-GcygVKHlZlxQ8z-Zr4orVhdcvHE3K7aRgJqXCJNNMbgCstHNG3q-t_5f4UgPaqh1BN3WZabU4eowkgxVcmclstv9GJqmTfPgDDq5EN3TrkgR75JZtMOW_go58Qbe5LTGlhUH2Oh6R1blV6J_gX6Dbarb5s=?" /> </p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../container_temperature/" class="btn btn-neutral float-left" title="Container temperature"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../component/" class="btn btn-neutral float-left" title="Component"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../context/" class="btn btn-neutral float-right" title="Context">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -104,8 +105,10 @@
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../container_temperature/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../component/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
+    
+      <span><a href="../context/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
